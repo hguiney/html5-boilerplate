@@ -1,75 +1,117 @@
+<!--?xml version="1.0"?-->
 <!DOCTYPE html>
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <html
-	xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:mml="http://www.w3.org/1998/Math/MathML"
-	xmlns:fb="https://www.facebook.com/2008/fbml"
-	class="no-js"
-	xml:lang="en" lang="en">
-<head>
-  <meta charset="utf-8" />
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:fb="https://www.facebook.com/2008/fbml"
+  class="no-js"
+  xml:lang="en" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="utf-8" />
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+More info: h5bp.com/i/378 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title></title>
-  <meta name="description" content="" />
+<title>[Page Name] | [Site Name]</title>
+<!-- https://developers.facebook.com/docs/opengraph/objects/builtin/ -->
+<!--
+http://stackoverflow.com/a/8153178/214325
+<meta property="fb:app_id" name="fb:app_id" content="YOUR_APP_ID" />
+<meta property="og:type" ncontent="website" />
+<meta property="og:url" content="URL of this object" />
+<meta property="og:image" content="URL to an image" />
+<meta property="og:title" content="Name of blog" />
+-->
+<meta name="description" content="" /><!-- property="og:description" (Description of object) -->
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width" />
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0" />
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+<meta name="viewport" content="width=device-width" />
 
-  <link rel="stylesheet" href="/css/style.css" />
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+<link rel="stylesheet" href="/style/index.css" />
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="/js/libs/modernizr-2.5.3.min.js"></script>
+<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+<!-- All JavaScript at the bottom, except this Modernizr build.
+Modernizr enables HTML5 elements & feature detects for optimal performance.
+Create your own custom Modernizr build: www.modernizr.com/download/ -->
+<script src="/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <body class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <body class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <body class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <body> <!--<![endif]-->
-<body>
-  
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
+<!--[if lt IE 7]><body class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><body class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><body class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><body><!--<![endif]-->
 
-  </header>
-  <div role="main">
-
-  </div>
-  <footer>
-
-  </footer>
-
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div class="content">
+	<header role="banner">
+		<div class="content">
+			<hgroup>
+				<h1>[Site Name]</h1>
+			</hgroup>
+			<nav role="navigation">
+				<hgroup class="implied">
+					<h2>Primary Navigation</h2>
+				</hgroup>
+				<ul>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</nav><!-- navigation -->
+		</div><!-- .content -->
+	</header>
+	<div class="content">
+		<article role="main">
+			<div class="content">
+				<hgroup>
+					<h2>[Page Name]</h2>
+				</hgroup>
+			</div><!-- .content -->
+		</article><!-- main -->
+		<aside role="complementary">
+			<div class="content">
+				<hgroup>
+					<h2>Sidebar</h2>
+				</hgroup>
+			</div><!-- .content -->
+		</aside><!-- complementary -->
+	</div><!-- .content -->
+	<footer role="contentinfo">
+		<div class="content">
+			<hgroup class="implied">
+				<h2>Footer</h2>
+			</hgroup>
+			<p id="copyright">© [Year] [Company Name]</p><!-- #copyright -->
+		</div><!-- .content -->
+	</footer><!-- contentinfo -->
+</div><!-- .content -->
+<!-- JavaScript at the bottom for fast page loading -->
+<div id="scripts">
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
+  <script src="/js/libs/jquery-test.js"></script>
+  
   <!-- scripts concatenated and minified via build script -->
   <script src="/js/plugins.js"></script>
   <script src="/js/script.js"></script>
-  <!-- end scripts -->
-
+  
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  mathiasbynens.be/notes/async-analytics-snippet -->
+  <script src="/js/libs/ga.js"></script>
+</div><!-- #scripts -->
 </body>
 </html>
