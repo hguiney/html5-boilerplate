@@ -1,3 +1,6 @@
 [submodule "script/libs/prefixfree"]
 	path = script/libs/prefixfree
 	url = git@github.com:hguiney/prefixfree.git
+[submodule "script/libs/infield-labels"]
+	path = script/libs/infield-labels
+	url = git@github.com:hguiney/In-Field-Labels-jQuery-Plugin-HTML5-Inputs.git
