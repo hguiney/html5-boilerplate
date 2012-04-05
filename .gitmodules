@@ -4,3 +4,9 @@
 [submodule "script/libs/infield-labels"]
 	path = script/libs/infield-labels
 	url = git@github.com:hguiney/In-Field-Labels-jQuery-Plugin-HTML5-Inputs.git
+[submodule "script/libs/details-polyfill"]
+	path = script/libs/details-polyfill
+	url = git://github.com/mathiasbynens/jquery-details.git
+[submodule "script/libs/html5outliner"]
+	path = script/libs/html5outliner
+	url = git://github.com/hoyois/html5outliner.git
